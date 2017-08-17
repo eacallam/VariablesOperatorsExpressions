@@ -94,22 +94,28 @@ namespace _08._15._17_VariablesOperatorsExpressions
             int studentTotal = 331;
             int studentCars = 7;
             int studentBus = studentTotal - studentCars;
-            int buses = 7;
+            int buses = 6;
             int busCapacity = studentBus / buses;
             Console.WriteLine(busCapacity);
             //Aliyah had $24 to spend on seven pencils.After buying them she had $10.How much did each pencil cost?
-            float amountSpent = 24 - 10;
+            float startAmount = 24;
+            float amountSpent = startAmount - 10;
             float pencils = 7;
-            float pencilCost = pencils / amountSpent;
+            float pencilCost = amountSpent / pencils;
             Console.WriteLine(pencilCost);
-            //The sum of three consecutive numbers is 72.What are the smallest of these numbers?
-
-            //The sum of three consecutive even numbers is 48.What are the smallest of these numbers?
-
+            //The sum of three consecutive numbers is 72. What are the smallest of these numbers?
+            float sum = 72f;
+            float smallestX = (sum - 3) / 3f;
+            Console.WriteLine(smallestX);
+            //The sum of three consecutive even numbers is 48. What are the smallest of these numbers?
+            int sumEven = 48;
+            int smallestXEven = (sumEven - 6) / 3;
+            Console.WriteLine(smallestXEven);
             //Maria bought seven boxes. A week later half of all her boxes were destroyed in a fire. There are now only 22 boxes left. With how many did she start?
             int remainingBoxes = 22;
             int beforeFire = remainingBoxes * 2;
-            int initial = beforeFire + 7;
+            int boughtBoxes = 7;
+            int initial = beforeFire - boughtBoxes;
             Console.WriteLine(initial);
         }
     }
